@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        android:text="@string/bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/title_size" />
+
+    <TableLayout
+        android:id="@+id/marco_fotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:id="@+id/marco_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagen_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/imagen_1" />
+
+            <ImageView
+                android:id="@+id/imagen_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/imagen_2" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/marco_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imagen_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/imagen_3" />
+
+            <ImageView
+                android:id="@+id/imagen_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/imagen_4" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/titulo_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.0"
+        android:text="@string/a_tu_mundo"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/informacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textColor="@color/white"/>
+</LinearLayout>
